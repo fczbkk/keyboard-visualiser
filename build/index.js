@@ -700,9 +700,9 @@ module.exports = function (css) {
   !*** ./src/arrow-down.svg ***!
   \****************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+Cjxzdmcgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDIwMCAyMDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxLjQxNDIxOyI+CiAgICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCgtMS44MzY5N2UtMTYsMSwtMSwtMS44MzY5N2UtMTYsMjAwLDApIj4KICAgICAgICA8cGF0aCBkPSJNMCwxMzVMMCw2NUwxMDAsNjVMMTAwLDBMMjAwLDEwMEwxMDAsMjAwTDEwMCwxMzVMMCwxMzVaIiBzdHlsZT0iZmlsbDpyZ2IoMjQyLDEzLDE3NSk7Ii8+CiAgICA8L2c+Cjwvc3ZnPgo="
+module.exports = __webpack_require__.p + "4516a27786f92aded73f24d1fb3b949b.svg";
 
 /***/ }),
 
@@ -711,9 +711,9 @@ module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGlu
   !*** ./src/arrow-left.svg ***!
   \****************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+Cjxzdmcgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDIwMCAyMDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxLjQxNDIxOyI+CiAgICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCgtMSwtMS4yMjQ2NWUtMTYsMS4yMjQ2NWUtMTYsLTEsMjAwLDIwMCkiPgogICAgICAgIDxwYXRoIGQ9Ik0wLDEzNUwwLDY1TDEwMCw2NUwxMDAsMEwyMDAsMTAwTDEwMCwyMDBMMTAwLDEzNUwwLDEzNVoiIHN0eWxlPSJmaWxsOnJnYig2NywyNDIsMTMpOyIvPgogICAgPC9nPgo8L3N2Zz4K"
+module.exports = __webpack_require__.p + "f7449be6b85e9641b180deffc03f7525.svg";
 
 /***/ }),
 
@@ -722,9 +722,9 @@ module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGlu
   !*** ./src/arrow-right.svg ***!
   \*****************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+Cjxzdmcgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDIwMCAyMDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxLjQxNDIxOyI+CiAgICA8cGF0aCBkPSJNMCwxMzVMMCw2NUwxMDAsNjVMMTAwLDBMMjAwLDEwMEwxMDAsMjAwTDEwMCwxMzVMMCwxMzVaIiBzdHlsZT0iZmlsbDpyZ2IoMjQyLDEzLDEzKTsiLz4KPC9zdmc+Cg=="
+module.exports = __webpack_require__.p + "8bab4b6231a6cebde506545fbf0d2980.svg";
 
 /***/ }),
 
@@ -733,9 +733,9 @@ module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGlu
   !*** ./src/arrow-up.svg ***!
   \**************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+Cjxzdmcgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDIwMCAyMDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxLjQxNDIxOyI+CiAgICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCg2LjEyMzIzZS0xNywtMSwxLDYuMTIzMjNlLTE3LDAsMjAwKSI+CiAgICAgICAgPHBhdGggZD0iTTAsMTM1TDAsNjVMMTAwLDY1TDEwMCwwTDIwMCwxMDBMMTAwLDIwMEwxMDAsMTM1TDAsMTM1WiIgc3R5bGU9ImZpbGw6cmdiKDEzLDQwLDI0Mik7Ii8+CiAgICA8L2c+Cjwvc3ZnPgo="
+module.exports = __webpack_require__.p + "213416eab55681dc46cfee750a120741.svg";
 
 /***/ }),
 
@@ -768,24 +768,29 @@ function createKeyboardVisualiser(config) {
   console.log('keyboard visualiser');
   var element = document.createElement('div');
   element.className = 'keyboardVisualiser';
-  element.innerHTML = 'keyboard visualiser placeholder  ';
   document.body.appendChild(element);
+  var image = document.createElement('img');
+  element.appendChild(image);
   window.addEventListener('keydown', function (event) {
     // console.log('key is pressed', event);
     if (event.key === 'ArrowUp') {
       console.log('up');
+      image.setAttribute('src', _arrow_up_svg__WEBPACK_IMPORTED_MODULE_0___default.a);
     }
 
     if (event.key === 'ArrowDown') {
       console.log('down');
+      image.setAttribute('src', _arrow_down_svg__WEBPACK_IMPORTED_MODULE_1___default.a);
     }
 
     if (event.key === 'ArrowRight') {
       console.log('right');
+      image.setAttribute('src', _arrow_right_svg__WEBPACK_IMPORTED_MODULE_2___default.a);
     }
 
     if (event.key === 'ArrowLeft') {
       console.log('left');
+      image.setAttribute('src', _arrow_left_svg__WEBPACK_IMPORTED_MODULE_3___default.a);
     }
   });
 }

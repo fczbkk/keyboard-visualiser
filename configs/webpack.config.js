@@ -6,7 +6,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, '../build'),
     publicPath: 'build/',
-    filename: 'index.js'
+    filename: 'index.js',
+    library: 'keyboardVisualiser',
+    libraryTarget: 'umd'
   },
   devtool: 'source-map',
   devServer: {
@@ -18,7 +20,7 @@ module.exports = {
     rules: [
       {
         test: /\.svg$/,
-        use: [ 'file-loader' ]
+        use: [ 'file-loader', 'svgo-loader' ]
       },
       {
         test: /\.css$/,

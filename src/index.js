@@ -7,7 +7,7 @@ import arrowLeft from './arrow-left.svg'
 
 console.log('arrow', arrowUp)
 
-function createKeyboardVisualiser (config) {
+export function createKeyboardVisualiser (config) {
   console.log('keyboard visualiser')
 
   const element = document.createElement('div')
@@ -42,5 +42,3 @@ function createKeyboardVisualiser (config) {
 
   })
 }
-
-createKeyboardVisualiser()
