@@ -1,3 +1,8 @@
+import {doSomething, doSomethingElse} from './utilities.js'
+
+doSomething()
+doSomethingElse()
+
 class Person {
 
   constructor (name) {
