@@ -1,4 +1,14 @@
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["keyboardVisualiser"] = factory();
+	else
+		root["keyboardVisualiser"] = factory();
+})(window, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -743,59 +753,114 @@ module.exports = __webpack_require__.p + "213416eab55681dc46cfee750a120741.svg";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no exports provided */
+/*! exports provided: keyToImage, NONE_IMAGE, WRAPPER_CLASS_NAME, getImageByKey, createWrapperElement, createImageElement, handleEvent, createKeyboardVisualiser */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _arrow_up_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrow-up.svg */ "./src/arrow-up.svg");
-/* harmony import */ var _arrow_up_svg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_arrow_up_svg__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _arrow_down_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./arrow-down.svg */ "./src/arrow-down.svg");
-/* harmony import */ var _arrow_down_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_arrow_down_svg__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _arrow_right_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./arrow-right.svg */ "./src/arrow-right.svg");
-/* harmony import */ var _arrow_right_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_arrow_right_svg__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _arrow_left_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./arrow-left.svg */ "./src/arrow-left.svg");
-/* harmony import */ var _arrow_left_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_arrow_left_svg__WEBPACK_IMPORTED_MODULE_3__);
-__webpack_require__(/*! ./style.css */ "./src/style.css");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "keyToImage", function() { return keyToImage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NONE_IMAGE", function() { return NONE_IMAGE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WRAPPER_CLASS_NAME", function() { return WRAPPER_CLASS_NAME; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getImageByKey", function() { return getImageByKey; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createWrapperElement", function() { return createWrapperElement; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createImageElement", function() { return createImageElement; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "handleEvent", function() { return handleEvent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createKeyboardVisualiser", function() { return createKeyboardVisualiser; });
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _none_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./none.svg */ "./src/none.svg");
+/* harmony import */ var _none_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_none_svg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _arrow_up_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./arrow-up.svg */ "./src/arrow-up.svg");
+/* harmony import */ var _arrow_up_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_arrow_up_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _arrow_down_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./arrow-down.svg */ "./src/arrow-down.svg");
+/* harmony import */ var _arrow_down_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_arrow_down_svg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _arrow_right_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./arrow-right.svg */ "./src/arrow-right.svg");
+/* harmony import */ var _arrow_right_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_arrow_right_svg__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _arrow_left_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./arrow-left.svg */ "./src/arrow-left.svg");
+/* harmony import */ var _arrow_left_svg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_arrow_left_svg__WEBPACK_IMPORTED_MODULE_5__);
 
 
 
 
 
-console.log('arrow', _arrow_up_svg__WEBPACK_IMPORTED_MODULE_0___default.a);
 
-function createKeyboardVisualiser(config) {
-  console.log('keyboard visualiser');
+var keyToImage = {
+  'ArrowUp': _arrow_up_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
+  'ArrowDown': _arrow_down_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
+  'ArrowRight': _arrow_right_svg__WEBPACK_IMPORTED_MODULE_4___default.a,
+  'ArrowLeft': _arrow_left_svg__WEBPACK_IMPORTED_MODULE_5___default.a,
+  'w': _arrow_up_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
+  'a': _arrow_down_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
+  's': _arrow_right_svg__WEBPACK_IMPORTED_MODULE_4___default.a,
+  'd': _arrow_left_svg__WEBPACK_IMPORTED_MODULE_5___default.a
+};
+var NONE_IMAGE = _none_svg__WEBPACK_IMPORTED_MODULE_1___default.a;
+var WRAPPER_CLASS_NAME = 'keyboardVisualiser';
+/**
+ * Returns link to image for specific key.
+ * @param {string} [key]
+ * @return {string}
+ */
+
+function getImageByKey(key) {
+  return keyToImage[key] || NONE_IMAGE;
+}
+/**
+ * Creates wrapper element
+ * @param {Node} [parent_node]
+ * @return {HTMLElement}
+ */
+
+function createWrapperElement() {
+  var parent_node = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document.body;
   var element = document.createElement('div');
-  element.className = 'keyboardVisualiser';
-  document.body.appendChild(element);
+  element.className = WRAPPER_CLASS_NAME;
+  parent_node.appendChild(element);
+  return element;
+}
+/**
+ * Creates image element with default source.
+ * @param {Node} parent_node
+ * @return {HTMLElement}
+ */
+
+function createImageElement(parent_node) {
   var image = document.createElement('img');
-  element.appendChild(image);
+  image.setAttribute('src', _none_svg__WEBPACK_IMPORTED_MODULE_1___default.a);
+  parent_node.appendChild(image);
+  return image;
+}
+/**
+ * Reacts to key press.
+ * @param {Object} event
+ * @param {HTMLElement} image_element
+ */
+
+function handleEvent(event, image_element) {
+  image_element.setAttribute('src', getImageByKey(event.key));
+}
+/**
+ * Initializes keyboard visualizer.
+ */
+
+function createKeyboardVisualiser() {
+  var wrapper_element = createWrapperElement(document.body);
+  var image_element = createImageElement(wrapper_element);
   window.addEventListener('keydown', function (event) {
-    // console.log('key is pressed', event);
-    if (event.key === 'ArrowUp') {
-      console.log('up');
-      image.setAttribute('src', _arrow_up_svg__WEBPACK_IMPORTED_MODULE_0___default.a);
-    }
-
-    if (event.key === 'ArrowDown') {
-      console.log('down');
-      image.setAttribute('src', _arrow_down_svg__WEBPACK_IMPORTED_MODULE_1___default.a);
-    }
-
-    if (event.key === 'ArrowRight') {
-      console.log('right');
-      image.setAttribute('src', _arrow_right_svg__WEBPACK_IMPORTED_MODULE_2___default.a);
-    }
-
-    if (event.key === 'ArrowLeft') {
-      console.log('left');
-      image.setAttribute('src', _arrow_left_svg__WEBPACK_IMPORTED_MODULE_3___default.a);
-    }
+    return handleEvent(event, image_element);
   });
 }
 
-createKeyboardVisualiser();
+/***/ }),
+
+/***/ "./src/none.svg":
+/*!**********************!*\
+  !*** ./src/none.svg ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "1d19272a4be5982f348ddab852791f7c.svg";
 
 /***/ }),
 
@@ -830,4 +895,5 @@ if(false) {}
 /***/ })
 
 /******/ });
+});
 //# sourceMappingURL=index.js.map

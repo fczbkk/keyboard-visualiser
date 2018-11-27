@@ -20,9 +20,12 @@
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
+    "@fczbkk/eslint-config": "^1.0.0",
     "babel-loader": "^8.0.4",
     "chai": "^4.2.0",
     "css-loader": "^1.0.1",
+    "documentation": "^8.1.2",
+    "eslint": "^5.9.0",
     "file-loader": "^2.0.0",
     "karma": "^3.1.1",
     "karma-chai": "^0.1.0",
@@ -31,6 +34,7 @@
     "karma-mocha-reporter": "^2.2.5",
     "karma-webpack": "^3.0.5",
     "mocha": "^5.2.0",
+    "rimraf": "^2.6.2",
     "style-loader": "^0.23.1",
     "svgo": "^1.1.1",
     "svgo-loader": "^2.2.0",
@@ -40,8 +44,14 @@
     "webpack-dev-server": "^3.1.10"
   },
   "scripts": {
+    "prebuild": "npm run cleanup && npm run test:build && npm run lint:build && npm run readme",
     "build": "webpack --config configs/webpack.config.js",
     "dev": "webpack-dev-server --config configs/webpack.config.js",
-    "test": "karma start ./configs/karma.config.js"
+    "test": "karma start ./configs/karma.config.js",
+    "test:build": "npm run test -- --single-run --no-auto-watch",
+    "lint": "eslint ./src/**/*.js",
+    "lint:build": "npm run lint -- --max-warnings 0",
+    "cleanup": "rimraf ./build",
+    "readme": "documentation readme ./src/index.js -s 'Documentation'"
   }
 }
