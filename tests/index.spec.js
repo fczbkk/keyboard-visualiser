@@ -73,8 +73,10 @@ describe('Keyboard Visualiser', function () {
 
     it('should set correct image', function () {
       const image_element = createImageElement(dummy_element)
-      handleEvent({key: 'ArrowUp'}, image_element)
-      assert(image_element.getAttribute('src'), keyToImage.ArrowUp)
+      Object.keys(keyToImage).forEach((key) => {
+        handleEvent({key}, image_element)
+        assert(image_element.getAttribute('src'), keyToImage[key])
+      })
     })
 
   })
