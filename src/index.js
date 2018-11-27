@@ -1,19 +1,46 @@
-import {doSomething, doSomethingElse} from './utilities.js'
+require('./style.css')
 
-doSomething()
-doSomethingElse()
+import arrowUp from './arrow-up.svg'
+import arrowDown from './arrow-down.svg'
+import arrowRight from './arrow-right.svg'
+import arrowLeft from './arrow-left.svg'
 
-class Person {
+console.log('arrow', arrowUp)
 
-  constructor (name) {
-    this.name = name
-  }
+function createKeyboardVisualiser (config) {
+  console.log('keyboard visualiser')
 
-  greet () {
-    console.log(`Nazdar ${this.name}`)
-  }
+  const element = document.createElement('div')
+  element.className = 'keyboardVisualiser'
+  document.body.appendChild(element)
 
+  const image = document.createElement('img')
+  element.appendChild(image)
+
+  window.addEventListener('keydown', function (event) {
+    // console.log('key is pressed', event);
+
+    if (event.key === 'ArrowUp') {
+      console.log('up')
+      image.setAttribute('src', arrowUp)
+    }
+
+    if (event.key === 'ArrowDown') {
+      console.log('down')
+      image.setAttribute('src', arrowDown)
+    }
+
+    if (event.key === 'ArrowRight') {
+      console.log('right')
+      image.setAttribute('src', arrowRight)
+    }
+
+    if (event.key === 'ArrowLeft') {
+      console.log('left')
+      image.setAttribute('src', arrowLeft)
+    }
+
+  })
 }
 
-const me = new Person('Riki')
-me.greet()
+createKeyboardVisualiser()
