@@ -45,7 +45,7 @@
     "webpack-dev-server": "^3.1.10"
   },
   "scripts": {
-    "prebuild": "npm run cleanup && npm run test:build && npm run lint:build && npm run readme",
+    "prebuild": "npm run cleanup && npm run test:build && npm run lint:build && npm run readme && npm run docs",
     "build": "webpack --config configs/webpack.config.js",
     "dev": "webpack-dev-server --config configs/webpack.config.js",
     "test": "karma start ./configs/karma.config.js",
