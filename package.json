@@ -1,6 +1,6 @@
 {
   "name": "@fczbkk/keyboard-visualiser",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Shows icon when key is press.",
   "repository": {
     "type": "git",

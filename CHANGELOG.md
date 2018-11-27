@@ -1,9 +1,10 @@
-# 1.0.0 (2018-11-27)
+# 1.1.0 (2018-11-27)
 
 
 ### Features
 
 * add Babel build ([d80bc73](https://github.com/fczbkk/keyboard-visualiser/commit/d80bc73))
+* add changelog and version task ([9a4a8c3](https://github.com/fczbkk/keyboard-visualiser/commit/9a4a8c3))
 * add documentation to build ([86628ca](https://github.com/fczbkk/keyboard-visualiser/commit/86628ca))
 * add export ([359776b](https://github.com/fczbkk/keyboard-visualiser/commit/359776b))
 * add Jsdoc documentation ([7ba210b](https://github.com/fczbkk/keyboard-visualiser/commit/7ba210b))
