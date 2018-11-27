@@ -9,6 +9,11 @@ module.exports = {
     filename: 'index.js'
   },
   devtool: 'source-map',
+  devServer: {
+    contentBase: path.resolve(__dirname, '../dev-server'),
+    compress: true,
+    port: 9000
+  },
   module: {
     rules: [
       {

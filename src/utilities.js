@@ -1,5 +1,5 @@
 export function doSomething () {
-  console.log('doing something')
+  console.log('bla bla bla')
 }
 
 export function doSomethingElse () {
