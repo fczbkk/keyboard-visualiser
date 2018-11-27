@@ -28,6 +28,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
+        exclude: /\.spec\.js$/,
         use: [
           {
             loader: 'babel-loader',
