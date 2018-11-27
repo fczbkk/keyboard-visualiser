@@ -23,6 +23,8 @@
     "@fczbkk/eslint-config": "^1.0.0",
     "babel-loader": "^8.0.4",
     "chai": "^4.2.0",
+    "conventional-changelog-angular": "^5.0.2",
+    "conventional-changelog-cli": "^2.0.11",
     "css-loader": "^1.0.1",
     "documentation": "^8.1.2",
     "eslint": "^5.9.0",
@@ -45,7 +47,7 @@
     "webpack-dev-server": "^3.1.10"
   },
   "scripts": {
-    "prebuild": "npm run cleanup && npm run test:build && npm run lint:build && npm run readme && npm run docs",
+    "prebuild": "npm run cleanup",
     "build": "webpack --config configs/webpack.config.js",
     "dev": "webpack-dev-server --config configs/webpack.config.js",
     "test": "karma start ./configs/karma.config.js",
@@ -54,6 +56,10 @@
     "lint:build": "npm run lint -- --max-warnings 0",
     "cleanup": "rimraf ./build",
     "readme": "documentation readme ./src/index.js -s 'Documentation'",
-    "docs": "jsdoc -c ./configs/jsdoc.config.json"
+    "docs": "jsdoc -c ./configs/jsdoc.config.json",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "preversion": "npm run test:build && npm run lint:build",
+    "version": "npm run build && npm run changelog && npm run docs && npm run readme && git add -A",
+    "postversion": "git push && git push --tags"
   }
 }
