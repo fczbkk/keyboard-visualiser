@@ -27,6 +27,7 @@
     "documentation": "^8.1.2",
     "eslint": "^5.9.0",
     "file-loader": "^2.0.0",
+    "jsdoc": "^3.5.5",
     "karma": "^3.1.1",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^2.2.0",
@@ -52,6 +53,7 @@
     "lint": "eslint ./src/**/*.js",
     "lint:build": "npm run lint -- --max-warnings 0",
     "cleanup": "rimraf ./build",
-    "readme": "documentation readme ./src/index.js -s 'Documentation'"
+    "readme": "documentation readme ./src/index.js -s 'Documentation'",
+    "docs": "jsdoc -c ./configs/jsdoc.config.json"
   }
 }
