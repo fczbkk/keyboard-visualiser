@@ -1,4 +1,28 @@
 {
-  "name": "keyboard-visualiser",
-  "version": "1.0.0"
+  "name": "@fczbkk/keyboard-visualiser",
+  "version": "1.0.0",
+  "description": "Shows icon when key is press.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:fczbkk/keyboard-visualiser.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Riki Fridrich",
+    "email": "riki@fczbkk.com",
+    "url": "http://fczbkk.com/"
+  },
+  "homepage": "https://github.com/fczbkk/keyboard-visualiser#readme",
+  "bugs": {
+    "url": "https://github.com/fczbkk/keyboard-visualiser/issues"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "webpack": "^4.26.1"
+  },
+  "scripts": {
+    "build": "babel ./src/ --out-dir ./build/ --config-file ./configs/babel.json"
+  }
 }
